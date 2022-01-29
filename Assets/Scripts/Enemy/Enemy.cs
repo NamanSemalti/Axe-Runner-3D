@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
     NavMeshAgent Agent;
     public GameObject player;
      float AttackRadius = 2f;
-     float chaseRadius = 11f;
+     float chaseRadius = 12f;
     float Distance;
     public static bool isAttacking;
     CoinCollection coinScript;
@@ -26,9 +26,10 @@ public class Enemy : MonoBehaviour
     AudioSource audioSource;
     public AudioClip deathSound;
     bool isdead;
+    public float speed ;
     void Start()
     {
-        
+        speed = 0.3f;
         audioSource = GetComponent<AudioSource>();
         audioSource.volume = 0.2f;
         EnableItems();
@@ -42,7 +43,7 @@ public class Enemy : MonoBehaviour
         anim = gameObject.GetComponent<Animator>();
         Agent = gameObject.GetComponent<NavMeshAgent>();
        
-        anim.speed = 0.2f;
+        anim.speed = speed;
     }
 
     

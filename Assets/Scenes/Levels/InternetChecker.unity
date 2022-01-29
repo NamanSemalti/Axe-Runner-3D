@@ -190,6 +190,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: InternetChcker
       objectReference: {fileID: 0}
+    - target: {fileID: 1886739231891407316, guid: 3d46a04ede34f1b4faef495d37342c23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886739231891407317, guid: 3d46a04ede34f1b4faef495d37342c23, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1886739231891407317, guid: 3d46a04ede34f1b4faef495d37342c23, type: 3}
       propertyPath: TapToStart
       value: 
